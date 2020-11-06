@@ -42,6 +42,9 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
                 </configuration>
             </plugin>
             <plugin>
@@ -51,5 +54,9 @@
             </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:vladimirGlinskikh/sfg-pet-clinic.git</developerConnection>
+    </scm>
 
 </project>
