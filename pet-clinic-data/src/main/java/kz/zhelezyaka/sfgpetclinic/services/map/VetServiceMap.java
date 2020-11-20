@@ -2,9 +2,11 @@ package kz.zhelezyaka.sfgpetclinic.services.map;
 
 import kz.zhelezyaka.sfgpetclinic.model.Vet;
 import kz.zhelezyaka.sfgpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
