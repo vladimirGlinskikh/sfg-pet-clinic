@@ -1,11 +1,11 @@
 package kz.zhelezyaka.sfgpetclinic.services.map;
 
 import kz.zhelezyaka.sfgpetclinic.model.Pet;
-import kz.zhelezyaka.sfgpetclinic.services.CrudService;
+import kz.zhelezyaka.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
