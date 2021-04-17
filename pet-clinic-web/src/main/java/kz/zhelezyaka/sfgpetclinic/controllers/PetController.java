@@ -42,8 +42,8 @@ public class PetController {
         return ownerService.findById(ownerId);
     }
 
-    @ModelAttribute("owner")
-    public void initBinder(WebDataBinder dataBinder) {
+    @InitBinder("owner")
+    public void initOwnerBinder(WebDataBinder dataBinder) {
         dataBinder.setDisallowedFields("id");
     }
 
